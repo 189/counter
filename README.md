@@ -414,7 +414,8 @@ Provider是 react-redux 提供的容器组件，用来嵌套需要通信的子�
 源码戳<a href="https://github.com/189/counter" target="_blank">这里</a>
 
 ###吐槽一下
-1. 概念太多，这里提到的 action,reducer,store,view，以及还没提到的，root reducer ,pure function, provider等
+
+1. 概念太多，这里提到的 action,reducer,store,view，以及我没提到的，root reducer ,pure function, provider等，都是些需要理解的概念，仅此还没涉及到 route...
 2. 更新太快，如果我不提供 package.json，过段时间这个 demo 估计都跑不了了
 3. react 本身设计很简单，加入了通信框架之后瞬间变得复杂了，这只是个小案例，项目大起来维护起来依旧心累；
 4. HTML 本身被碎片化，对这个褒贬不一，前端花了这么多年把 js和 css,html分离，现在又把 html 和 js揉在一起了，该说点什么好
