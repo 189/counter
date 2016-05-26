@@ -1,0 +1,68 @@
+body,html,div,span,button { margin: 0; padding: 0; }
+$red : rgb(220, 20, 20);
+$large : 13px;
+
+@mixin backgroundClip($value:padding-box){
+	-webkit-background-clip : $value;
+	   -moz-background-clip : $value;
+	    -o-background-clip : $value;
+	    -ms-background-clip : $value;
+	    	background-clip : $value;
+}
+
+@mixin appearance($value:none){
+	-webkit-appearance : $value;
+	   -moz-appearance : $value;
+	    -o-appearance : $value;
+	    -ms-appearance : $value;
+	    	appearance : $value;
+}
+
+@mixin borderBox($value:border-box){
+	-webkit-box-sizing : $value;
+	   -moz-box-sizing : $value;
+	    -o-box-sizing : $value;
+	    -ms-box-sizing : $value;
+	    	box-sizing : $value;
+}
+
+button { 
+	@include appearance(none);		
+}
+
+.ui-btn {
+	background-color : $red;
+	background-image : -webkit-gradient(linear,left top,left bottom,color-stop(0.5,rgb(220, 20, 20)),to(rgb(220, 20, 20)));
+	color : #fff;
+	border-color : $red;
+	border-radius : 3px;
+	height:25px;
+	line-height:25px;
+	border:none;
+	padding: 0 10px;
+	font-size:$large;
+	cursor:pointer;
+
+}
+
+.space {
+	margin : 10px;
+}
+
+#box { 
+	@extend .space;
+}
+
+#box {
+	span,button { 
+		@extend .space;
+		outline: none; 
+	} 
+
+	button {
+		@extend .ui-btn;
+		@include backgroundClip(padding-box);
+
+	}
+}
+
