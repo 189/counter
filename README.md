@@ -423,5 +423,7 @@ Provider是 react-redux 提供的容器组件，用来嵌套需要通信的子�
 ###使用方法
 ```
 $ npm install && npm run build
+$ cd build
+$ open counter.html
 ```
 
